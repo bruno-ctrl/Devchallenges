@@ -1,0 +1,232 @@
+/* Configurações dos botões (Geral)*/
+@font-face{
+    font-family: Noto Sans JP;
+    src: url('/fonts/NotoSansJP-Thin.otf')  ;
+  }
+
+body{
+    font-family: Noto Sans JP;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+header{
+    text-align: justify;
+    margin-left: 23%;
+    margin-bottom: 50px;
+}
+  
+.header{
+    border-radius: 3px;
+    color: #4F4F4F;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 3px 7px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+.container-0{
+    display: flex;
+
+}
+
+.container-1{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.container-2{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    line-height: 100px;
+}
+
+button{
+    outline: none;
+    height: 3em;
+    width: 120px;
+    border-radius: 6px ;
+    cursor: pointer;  
+    border:none;
+    transition: all .2s linear;
+}
+
+.btn-default{
+    background-color:  #d1cfcf;    
+}
+
+.btn-default:hover,.btn-default:focus{
+    background-color:  #aeaeae; 
+}
+
+/*Estilo do segundo botão(Default)*/
+
+.outline{
+    background-color: #fff;
+    border: 1px solid #3d5afe !important;
+    color: #3d5afe ;   
+}
+
+.outline:hover,.outline:focus{
+    background:rgba(41,98,255,0.1);
+   
+}
+
+/*Estilo do terceiro botão(Text)*/
+
+.text{
+    background-color :white ;
+    color:#3d5afe;
+    border:none;
+}
+
+.text:focus,.text:hover{
+    background:rgba(41,98,255,0.1);
+}
+
+/*Estilo do quarto botão(Box-shadow)*/
+
+.shadow{
+    background-color: white !important;
+    border:none;
+    color:blue;
+    box-shadow: none;   
+}
+
+.shadow:hover,.shadow:focus{
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0, 2px, 3px rgba(0, 49, 202, 0.2);
+}
+
+.btn-shadow{
+    background-color: #3d5afe;
+    border:none;
+    box-shadow: 0 2px 3px rgba(0, 49, 202, 0.2);
+    color:white;
+}
+
+/*Estilo do quinto botão(Disabled)*/
+
+.disabled-Text{
+    background-color: #aeaeae;
+}
+.btn-textDisable{
+    background-color: white;
+    border: none;
+    color: #9E9E9E;
+}
+
+/*Estilo do Sexto Botão(Botão com icone)*/
+
+#btn-icon{
+    color:white ;
+    background-color:#2962ff ;
+}
+
+.icon{
+   float: left;
+}
+
+.icon-r{
+    float: right;
+}
+
+.btn-icon{
+    margin-left: 0;
+    color:white ;
+    background-color:#2962ff ;
+}
+
+.fa-shopping-cart:before {
+    margin-left: 15px;
+    margin-right: 15px;
+    content: "\f07a";
+}
+
+/*Estilo do sétimo botão(Botão com tamanhos) */
+.btn-P{
+    height: 32px;
+    width: 73px;
+   
+    border-radius: 6px;
+    background-color: #2962ff;
+    color:white;
+}
+
+.btn-M{
+    height: 40px;
+    width: 82px;
+    border-radius: 6px;
+    background-color: #2962ff;
+    color:white;
+}
+
+.btn-G{
+    height: 50px;
+    width: 120px;
+    border-radius: 6px;
+    background-color: #2962ff;
+    color:white;
+}
+
+/*Estilo do oitavo botão (cores)*/
+
+.btn-color{
+    background-color: #e0e0e0;
+    color:black;
+    border:none;
+}
+
+.btn-color:hover,.btn-color:focus{
+    background-color: #aeaeae;
+    color:black;
+    border:none;
+}
+
+.btn-color{
+    background-color: #e0e0e0;
+    color:black;
+    border:none;
+}
+
+.btn-blue{
+    background-color: #2e04e7;
+    color:black;
+    border:none;
+}
+
+.btn-blue:hover,.btn-blue:focus{
+    background-color: #0039cb;
+}
+
+.btn-black{
+    background-color:#010c11;
+    color:white;
+}
+
+.btn-black:hover,.btn-black:focus{
+    background-color: #1c313a;
+}
+
+.btn-danger{
+    background-color: #e20f0f;
+    color:rgb(233, 212, 212);
+    border:none;
+}
+
+.btn-danger:hover,.btn-danger:focus{
+    background-color: #9A0007;
+
+}

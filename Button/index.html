@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button</title>
+  <link rel="stylesheet" href="/Button/style.css">
+  <script src="https://kit.fontawesome.com/7a24476863.js" crossorigin="anonymous"></script>
+  
+
+</head>
+
+<body>
+  <header>
+    <div class="head">
+    <h1>Buttons</h1>
+   </div>
+</header>
+  <div class="container-0">
+  <div class="container-1">
+    <ul>
+      <li class="btn">
+        <button class="btn-default">Default</button>
+      </li>
+      <li>
+        <button class="outline">Outline</button>
+      </li>
+      <li class="btn">
+        <button class="text">Default</button>
+      </li>
+      <li class="btn">
+        <button class="shadow">Default</button>
+      </li>
+    </ul>
+  </div>
+  <div class="container-2">
+    <ul>
+      <li class="btn">
+        <button class="disabled-Text">Disabled</button>
+      </li>
+      <li class="btn">
+        <button class="btn-icon">Default<i class="fas fa-shopping-cart"></i></button>
+      </li>
+      <li class="btn">
+        <button class="btn-P">Small</button>
+      </li>
+      <li class="btn">
+        <button class="btn-color">Default</button>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <script>
+    //Botões para box-shadow;
+    var shadow = document.querySelector(".shadow")
+    var newShadow = document.createElement("button")
+
+    //Botões para o botão disabled
+    var dis = document.querySelector(".disabled-Text");
+    var newDis = document.createElement("button");
+
+    //Botões para o botão com  icon
+    var Bicon = document.querySelector(".btn-icon");
+    var newBtnIcon = document.createElement("button")
+    var icon = document.querySelector(".icon");
+    var newIcon = document.createElement("icon");
+
+    //Botões para o botão com tamanhos diferentes
+    var btnP = document.querySelector(".btn-P");
+    var btnM = document.createElement("button");
+    var btnG = document.createElement("button");
+
+    //Botões para o botão de cores diferentes
+    var btnColor = document.querySelector(".btn-color")
+    var btnBlue = document.createElement("button");
+    var btnBlack = document.createElement("button")
+    var btnDanger = document.createElement("button");
+
+
+
+
+    //Colocando atributos no botão de sombra
+    newShadow.className = "btn-shadow";
+    //Adcionando nome
+    newShadow.innerText = "Default"
+    // Adcionando box-shadow e retirando box-shadow
+    shadow.addEventListener("click", () => {
+      shadow.replaceWith(newShadow);
+    })
+
+    newShadow.addEventListener("click", () => {
+      newShadow.replaceWith(shadow);
+    });
+    // colocando atributo no novo disable;
+    newDis.className = "btn-textDisable"
+    newDis.innerText = "Disabled"
+
+    // Desabilitando o botão(Disabled); 
+    dis.addEventListener("click", () => {
+      dis.replaceWith(newDis);
+
+    })
+
+    //colocando atributos no botão de icone(Botão icone)
+    newBtnIcon.id = "btn-icon"
+    newBtnIcon.className = "fas fa-shopping-cart";
+    newBtnIcon.innerText = "Default"
+ 
+
+
+
+    // Mudando o icone de posição
+    Bicon.addEventListener("click", () => {
+      Bicon.replaceWith(newBtnIcon);
+    })
+    newBtnIcon.addEventListener("click", () => {
+      newBtnIcon.replaceWith(Bicon);
+    })
+
+    //Colocando atributos nos botões de Tamanhos
+    btnM.className = "btn-M";
+    btnG.className = "btn-G";
+
+    //colocando nomes
+    btnM.innerText = "Medium"
+    btnG.innerText = "Large"
+
+    // Aumentando o tamanho do botão
+    btnP.addEventListener("click", () => {
+      btnP.replaceWith(btnM);
+    })
+    btnM.addEventListener("click", () => {
+      btnM.replaceWith(btnG);
+    })
+    btnG.addEventListener("click", () => {
+      btnG.replaceWith(btnP);
+    })
+
+    //Adcionar atributos aos botões do cores
+    btnBlue.innerText = "Default"
+    btnBlue.className = "btn-blue"
+
+    btnBlack.className = "btn-black"
+    btnBlack.innerHTML = "Secondary"
+
+    btnDanger.className = "btn-danger"
+    btnDanger.innerText = "Danger"
+
+
+    //Mudando de cores 
+
+    btnColor.addEventListener("click", () => {
+      btnColor.replaceWith(btnBlue);
+    })
+    btnBlue.addEventListener("click", () => {
+      btnBlue.replaceWith(btnBlack);
+    })
+    btnBlack.addEventListener("click", () => {
+      btnBlack.replaceWith(btnDanger);
+    })
+    btnDanger.addEventListener("click", () => {
+      btnDanger.replaceWith(btnColor);
+    })
+
+
+
+  </script>
+   <footer>Criado por: Bruno rodrigues do nascimento</footer>
+</body>
+
+</html>

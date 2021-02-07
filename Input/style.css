@@ -1,0 +1,152 @@
+@font-face{
+  font-family: Noto Sans JP;
+  src: url('/fonts/NotoSansJP-Thin.otf')  ;
+}
+
+body{ 
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.container-solo{
+  display: flex;
+  margin-left: 17.9%;
+}
+
+header{
+  text-align: justify;
+  margin-left: 240px;
+  margin-bottom: 50px;
+}
+
+.header{
+  border-radius: 3px;
+  color: #4F4F4F;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 3px 7px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+label{
+  height: 17px;
+  width: 100px;
+  left: 318px;
+  top: 306px;
+  border-radius: undefinedpx;
+  display: inline;
+  transition: all 0.5s;
+}
+
+
+textarea{
+  font-family: Noto Sans JP;
+  display: flex;
+  height: 150px;
+  width: 200px;
+  left: 317px;
+  top: 1371px;
+  border-radius: 8px;
+  resize:none;  
+  padding-left: 10%;
+}
+
+input{
+  display: flex;
+  margin-bottom: 10px;
+  height: 56px ;
+  width: 200px;
+  transition: all 0.5s ;
+  border-radius: 8px;
+  border: 1px solid;
+  outline:none;
+  padding-left: 10%;
+}
+
+/*Primeira box*/
+
+.input-default,.Default{
+  color: #828282;
+}
+
+.Default:hover,.input-default:hover{
+ color: #333333;
+}
+
+.Default:focus-within,.input-default:focus-within{
+  color:#2e64f8; 
+}
+
+/*Input de erro */
+.error,.input-error{
+  color:#D32F2F
+}
+
+.input-error:hover,.error:hover{
+  color: #333333
+}
+
+.input-error:focus-within,.error:focus-within{
+  border-color: #D32F2F;
+  color: #D32F2F;
+}
+
+/*input disabled*/
+
+.input-disabled{
+  border:none;
+}
+
+/*Input some interesting*/
+
+.input-someInteresting{
+  border-color:#828282;
+}
+
+.interesting{
+  color:#828282;
+}
+
+/*input icone */
+
+.icon-img{
+  position: absolute;
+  top: 377px;
+  width: 28px;
+  right:30%;
+}
+
+.input-icon{
+  text-align: center;
+}
+
+.icon-lock{
+  position: absolute;
+  top: 377px;
+  width: 28px;
+  right:14%;
+}
+
+/*input com tamanho*/
+
+.input-size{
+  height: 40px ;
+  width: 200px;
+  left: 319px;
+  top: 1077px;
+  border-radius: 8px;
+}
+
+/* input do tamanho da tela*/
+.input-large{
+  width: 500%;
+}
