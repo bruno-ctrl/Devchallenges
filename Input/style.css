@@ -15,6 +15,7 @@ body{
   display: flex;
   justify-content: space-around;
   padding: 10px;
+  margin-left: -25px;
 }
 
 .container-solo{
@@ -122,7 +123,7 @@ input{
   position: absolute;
   top: 377px;
   width: 28px;
-  right:30%;
+  right:29%;
 }
 
 .input-icon{
@@ -133,7 +134,7 @@ input{
   position: absolute;
   top: 377px;
   width: 28px;
-  right:14%;
+  right:19%;
 }
 
 /*input com tamanho*/

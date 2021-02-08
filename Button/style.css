@@ -61,6 +61,8 @@ button{
     transition: all .2s linear;
 }
 
+/*Primeiro botão */
+
 .btn-default{
     background-color:  #d1cfcf;    
 }
