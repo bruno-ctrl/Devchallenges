@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/Input/style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Inputs</title>
 </head>
 
@@ -44,7 +44,6 @@
     <form class="icon">
       <label>Label</label>
       <input type="text" placeholder="Placeholder" class="input-icon">
-      <img class="icon-img" src="/Img/call-black-18dp.svg" alt="Phone">
     </form>
   </div>
   <div class="container-solo">
@@ -73,19 +72,26 @@
     var inputIcon = document.querySelector(".input-icon");
     var inputSize = document.querySelector(".input-size");
     var textArea = document.querySelector(".input-multiRows");
-    var lockImg = document.createElement("img");
-    var phoneImg = document.querySelector(".icon-img")
+    var inputLock = document.createElement('input');
+    inputLock.className ="input-lock";
 
-    lockImg.className = 'icon-lock'
-    lockImg.src = "/img/lock-black-18dp.svg";
+    //Colocando cadeado
+
+    inputIcon.addEventListener('keypress',(e) =>{
+      if (e.key === "Enter") {
+        inputIcon.replaceWith(inputLock);
+        e.preventDefault();
+      }
+    })
+    
 
     //Encontrando a palavra certa
-    someInteresting.addEventListener("keypress", (e) => {
+    someInteresting.addEventListener ("keypress", (e) => {
       if (e.key === "Enter") {
         if (someInteresting.value !== "bruno") {
-          Interesting.style.color = "#D32F2F"
+          Interesting.style.color = "#D32F2F";
           someInteresting.style.borderColor = "#D32F2F"
-          event.preventDefault()
+          event.preventDefault();
         }
       }
     })
@@ -95,7 +101,7 @@
       if (e.key === "Enter" && inputIcon.value !== "") {
         inputIcon.style.textAlign ='left';
         phoneImg.replaceWith(lockImg);
-        event.preventDefault()
+        event.preventDefault();
       }
     })
 
@@ -103,7 +109,7 @@
     inputSize.addEventListener("keypress", (e) => {
       if (e.key === "Enter") {
         inputSize.style.height = "56px";
-        event.preventDefault()
+        event.preventDefault();
       }
     })
 

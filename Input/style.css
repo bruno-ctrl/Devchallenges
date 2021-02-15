@@ -5,27 +5,18 @@
 
 body{ 
   font-family: Noto Sans JP;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 17px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    display: flow-root;
+    position: absolute;
+    left: 15%;
 }
 
-.container{
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  margin-left: -25px;
-}
-
-.container-solo{
-  display: flex;
-  margin-left: 17.9%;
-}
 
 header{
   text-align: justify;
-  margin-left: 240px;
   margin-bottom: 50px;
 }
 
@@ -34,7 +25,6 @@ header{
   color: #4F4F4F;
   font-size: 0.8em;
   font-weight: bold;
-  padding: 3px 7px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
 }
 
@@ -43,7 +33,6 @@ label{
   width: 100px;
   left: 318px;
   top: 306px;
-  border-radius: undefinedpx;
   display: inline;
   transition: all 0.5s;
 }
@@ -63,14 +52,13 @@ textarea{
 
 input{
   display: flex;
-  margin-bottom: 10px;
   height: 56px ;
   width: 200px;
   transition: all 0.5s ;
   border-radius: 8px;
   border: 1px solid;
+  margin-bottom: 10px;
   outline:none;
-  padding-left: 10%;
 }
 
 /*Primeira box*/
@@ -119,22 +107,22 @@ input{
 
 /*input icone */
 
-.icon-img{
-  position: absolute;
-  top: 377px;
-  width: 28px;
-  right:29%;
-}
 
 .input-icon{
   text-align: center;
+  background-image: url(/Img/call-black-18dp.svg) ;
+  background-repeat: no-repeat;
+  background-position:left 10px;
+  background-size: 35px;
+  
 }
-
-.icon-lock{
-  position: absolute;
-  top: 377px;
-  width: 28px;
-  right:19%;
+.input-lock{
+  text-align: start;
+  background-image: url(/Img/lock-black-18dp.svg) ;
+  background-repeat: no-repeat;
+  background-position:right 10px;
+  background-size: 35px;
+  
 }
 
 /*input com tamanho*/
